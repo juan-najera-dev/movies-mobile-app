@@ -4,7 +4,7 @@ Mobile app created in IONIC that consumes OMDb API Rest
 
 ## How to run
 
-You will need NodeJS and create an API KEY in https://www.omdbapi.com/, clone the repository and execute
+You will need NodeJS and create an API KEY in https://www.omdbapi.com/, clone the repository, then paste the API KEY in /src/app/api/movies.service.ts and execute
 
 ```bash
 npm install
