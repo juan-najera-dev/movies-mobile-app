@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Home </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="title">
+    <h2>Destacadas</h2>
+  </div>
+
+  <div class="movies-container">
+    <ion-card *ngFor="let movie of movies" class="movie-card">
+      <img (click)="openModal(movie.imdbID)" [src]="movie.Poster" />
+      <ion-card-header>
+        <ion-card-title class="movie-title"
+          >{{movie.Title.length>17?movie.Title.substring(0, 17)+
+          "...":movie.Title}}</ion-card-title
+        >
+        <ion-card-subtitle>{{movie.Year}}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,14 @@
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  max-width: 40vw;
+  height: auto;
+}
+
+.movie-title {
+  font-size: 1rem;
+}
